@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0%;
+}
+body{
+    background-color:#f7f4e9;
+}
+/* navbar */
+.navbar-nav li{
+
+    padding-left: 60px;
+    font-size: 20px;
+}
+#navbar123{
+    padding-left: 200px;
+}
+ nav{
+    
+    box-shadow: 0 4px 8px rgb(14 55 54 / 15%);
+    background-color:#a7d129; 
+    
+    
+}
+.navbar-brand p{
+    font-size: 35px;
+    font-family: cursive;
+    color:crimson;
+    font-weight: bolder;
+}
+ /* corousel */
+ .carousel-item img{
+    height: 600px;
+    border-radius: 5%;    
+}
+/* aboutus */
+.aboutus{
+    padding-top: 30px;
+}
+.abouth{
+    /* font-size: 30px; */
+    text-align: center;
+    color:#18206F;
+}
+.readmore{
+    width: 15%;
+    border-radius: 5px;
+    border: 2px solid black;
+    font-size: 18px;
+    border: 2px solid lightseagreen;
+    color: teal;
+}
+.aboutimg img{
+    height: 400px;
+    width: 400px;
+    margin-left: 170px;
+}
+/* services */
+.ser{
+    text-align: center;
+    padding-top: 30px;
+    color:#18206F;
+   
+}
+.c1{
+    height:400px;
+    margin-left: 20px;
+    background-color: #DFE1CC;
+}
+.card-body:hover{
+    background-color:papayawhip;
+    
+    
+}
+.card-title{
+    color: tomato;
+}
+.card-text{
+    font-family: serif;
+}
+/* cards end */
+input{
+    display: none;
+}
+.top-content .r1{
+    width: 200px;
+    height: 80px;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 17px;
+    font-size: 30px;
+    box-shadow: 0 4px 8px rgba(20, 23, 23, 0.2);
+}
+.top-content label{
+    margin-left: 30px;
+    background-color: #B1EDE8;
+}
+.container h1{
+    text-align: center;
+    color:#18206F;
+
+}
+.top-content h3{
+    font-size: 12px;
+    text-align: center;
+}
+.container{
+    width: 100%;
+    text-align: center;
+}
+.diet-recipes{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+     gap:20px;
+}
+.diet-recipes h5{
+    font-style: italic;
+}
+.modal-content{
+    background-color: #FFDAB9;
+}
+.pic{
+    position: relative;
+    height: 230px;
+    border-radius: 10px;
+    transition: .5s;
+    padding-top: 20px;
+}
+.pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+#check1:checked ~ .container .diet-recipes .pic{
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+    transition: .5s;
+}
+#check2:checked ~ .container .diet-recipes .breakfast{
+    opacity: 1;
+    transform: scale(1);
+    position: relative;  
+}
+#check2:checked ~ .container .diet-recipes .lunch,
+#check2:checked ~ .container .diet-recipes .dinner{
+    opacity: 0;
+    transform: scale(0);
+    position: absolute; 
+    transition: .0s;   
+}
+#check3:checked ~ .container .diet-recipes .lunch{
+    opacity: 1;
+    transform: scale(1);
+    position: relative;  
+}
+#check3:checked ~ .container .diet-recipes .breakfast,
+#check3:checked ~ .container .diet-recipes .dinner{
+    opacity: 0;
+    transform: scale(0);
+    position: absolute; 
+    transition: .0s;   
+}
+#check4:checked ~ .container .diet-recipes .dinner{
+    opacity: 1;
+    transform: scale(1);
+    position: relative;  
+}
+#check4:checked ~ .container .diet-recipes .breakfast,
+#check4:checked ~ .container .diet-recipes .lunch{
+    opacity: 0;
+    transform: scale(0);
+    position: absolute; 
+    transition: .0s;   
+}
+.modal-body img{
+    object-fit: contain;
+    height: 200px;
+    width: 300px;
+}
+button{
+    height: 30px;
+    width: 100px;
+    border:2px solid black;
+}
+button:hover{
+    background-color: #a7d129;;
+}
+.accordion{
+    width: 50%;
+    justify-content: center;
+    margin-left: 25%;
+}
+.accordion-body a{
+text-decoration: none;
+}
+
+.section-container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 1rem;
+    text-align: center;
+
+}
+.section-container h1{
+    text-align: center;
+}
+
+.section-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+.section-card{
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    padding: 5rem 2rem;
+    background-color: rgb(236, 240, 240);
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .1);
+    transition: 0.3s;
+}
+
+/* .section-card::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    background-color: rgb(205, 255, 243);
+    z-index: 1;
+    transition: 0.5s;
+
+} */
+
+.section-card span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    font-size: 3rem;
+    color: #fff;
+
+}
+
+.section-card h4{
+    margin: 4rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: blueviolet;
+    transition: 0.3s;
+}
+
+.section-card p{
+    margin-bottom: 2rem;
+    color: rgb(110, 89, 62);
+transition: 0.3s;
+}
+
+.section-card img{
+    margin-bottom: 1rem;
+    max-width: 100px;
+    border-radius: 100%;
+    border: 2px solid black;
+    transition: 0.3s;
+
+}
+
+.section-card h5{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color:blue;
+    transition: 0.3s;
+
+}
+
+.section-card h6{
+    font-size: 1rem;
+    font-weight: 400;
+    color: gray;
+    transition: 0.3s;
+}
+
+/* .section-card:hover::before{
+    width: 400%;
+
+}
+
+.section-card:hover :is(h4, h5){
+    color: #fff;
+}
+
+.section-card:hover :is(p, h6){
+    color: aquamarine;
+}
+
+.section-card:hover img{
+    border-color: #fff;
+
+} */
+.footer{
+    background-color: #D8D5D6;
+}
+.footer .box-container .box a{
+    display: block;
+    text-decoration: none;
+
+}
+.footer .box-container{
+    display: flex;
+
+}
+.footer .box-container .box{
+    margin-left: 15%;
+    line-height: 2rem;
+}
+.footer .box-container .box2{
+    margin-left: 20%;
+}
+.footer .box-container .box3{
+    margin-left: 20%;
+}
+
+
